@@ -1,7 +1,7 @@
 class Calculater:
 
 	def __init__(self):
-		print("
+		pass
 
 	def add(self,num_list):
 		result=0
