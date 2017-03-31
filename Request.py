@@ -1,13 +1,10 @@
 import requests
 
 
+params = {'q' : 'python'}
+headers = {'Accept-Language':'ko','Accept-Encoding' : 'gzip' }
+res = requests.get('https://www.debian.org', params=params, headers = headers)
 
-prrams = {'action' : 'search', 'term' : 'Are you quite '}
-res = requests.get('http://www.debian.org')
-
-
-print(res.status_code)
-print(res.encoding)
-
-
-#request로 해서 검색하는거 해볼것
+print(res.url)
+print(res.content)
+print(res.headers)
