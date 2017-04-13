@@ -11,7 +11,8 @@ if option == 'a':
     f.close
 elif option == 'r':
     f = open('memo.txt')
-    f.read()
+    print(f.readline(limit=1))
+    print(f.readline())
 else :
     print('옵션이 잘못되었습니다.')
 
